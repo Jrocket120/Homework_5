@@ -14,8 +14,8 @@ public class GameScript : MonoBehaviour
     private int livesCounter = 3;   //Keeps Track of the lives left 
 
     //========== Ball Controls 
-    public GameObject ball;
-    public Transform spawnPoint;
+    public GameObject Ball;
+    public Transform spwanPoint;
 
     //========== Spike Controls 
     public List<Transform> points;  //Holds all of the points that the spike goes through 
@@ -23,7 +23,7 @@ public class GameScript : MonoBehaviour
     private int index = 0;          //Which index that spike is moving towards 
 
     //========== Level Controls 
-    public string levelName;
+    public string MenuScene;
 
     //===============================================================
     //Base Functions
@@ -32,6 +32,8 @@ public class GameScript : MonoBehaviour
     //Preset the texts 
     private void Start()
     {
+        score.text = "0";
+        lives.text = "0";
         //Present the Text to values of 0
     }
 
@@ -67,29 +69,40 @@ public class GameScript : MonoBehaviour
     public void SpikeUpdate()
     {
         livesCounter--;
+        lives.text = livesCounter + "";
         //Update the text 
         if (livesCounter == 0)
         {
             BackToMainMenu();
         }
+        
+        
+
+        
     }
 
     //Increase the score and updates the text 
     public void GoalUpdate()
     {
         scoreCounter++;
+        score.text = scoreCounter + "";
         //Update the Text 
     }
 
     //Creates a new ball
     public void SpawnBall()
     {
+       
+        var spawn = Instantiate(Ball, spwanPoint.position, Quaternion.identity);
+
         //Create Ball
     }
 
     //Sends the game back to the main menu scene 
     private void BackToMainMenu()
     {
+        
+        SceneManager.LoadScene(MenuScene);
         //Send back to the main menu
     }
 }

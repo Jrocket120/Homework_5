@@ -1274,6 +1274,10 @@ PrefabInstance:
       value: -3.58
       objectReference: {fileID: 0}
     - target: {fileID: 3864454491007765129, guid: 9dcbcfd4b9cb62e4c90ee069b79d9a23, type: 3}
+      propertyPath: Ball
+      value: 
+      objectReference: {fileID: 9219792027384280569, guid: 2706700f5fe63714bbf4df4149c0fe62, type: 3}
+    - target: {fileID: 3864454491007765129, guid: 9dcbcfd4b9cb62e4c90ee069b79d9a23, type: 3}
       propertyPath: ball
       value: 
       objectReference: {fileID: 9219792027384280569, guid: 2706700f5fe63714bbf4df4149c0fe62, type: 3}
@@ -1286,11 +1290,19 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1545125171}
     - target: {fileID: 3864454491007765129, guid: 9dcbcfd4b9cb62e4c90ee069b79d9a23, type: 3}
+      propertyPath: MenuScene
+      value: MenuScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 3864454491007765129, guid: 9dcbcfd4b9cb62e4c90ee069b79d9a23, type: 3}
       propertyPath: levelName
       value: MenuScene
       objectReference: {fileID: 0}
     - target: {fileID: 3864454491007765129, guid: 9dcbcfd4b9cb62e4c90ee069b79d9a23, type: 3}
       propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 1840518054}
+    - target: {fileID: 3864454491007765129, guid: 9dcbcfd4b9cb62e4c90ee069b79d9a23, type: 3}
+      propertyPath: spwanPoint
       value: 
       objectReference: {fileID: 1840518054}
     - target: {fileID: 3864454491210478148, guid: 9dcbcfd4b9cb62e4c90ee069b79d9a23, type: 3}
